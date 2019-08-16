@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Weird Deals Website </title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1> Weirdos Inc </h1>
+    </header>
+    <main>
+      <p> * is required information </p>
+       <form action="" method="post">
+          <fieldset class="form-group">
+             <input type="text" name="name" class="form-control" placeholder="Please enter your name *" required>
+             <input type="email" name="email" class="form-control" placeholder="Please enter your email *" required id="mail">
+             <input type="number" name="age" class="form-control" placeholder="Please enter your age *" required min="1" max="120">
+             <input type="text" name="city" class="form-control" placeholder="Please enter your location *" required>
+          </fieldset>
+
+          <input type="submit" value="submit form" name="submit">
+       </form>
+    </main>
+    <footer>
+      <p> &copy; JS Summer 2019 Project 4</p>
+    </footer>
+  </div><!--end container -->
+  <script src="validation.js">
+
+function initMap() {
+
+  var uluru = {lat: -25.344, lng: 131.036};
+
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+
+  </script>
+</body>
+
+</html>
